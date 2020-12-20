@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="150dp"
+                   android:src="@drawable/problem"
+                   android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:text="\n☆총 4문제로 이루어져 있으며,\n 1~4주차에 관한 기본 문제입니다.☆\n"/>
+                <TextView
+                    android:text="1. XML 속성 중 위젯의 동작 여부에 관한 속성으로 알맞은 것은? "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="#020101"
+                    android:textSize="15dp"
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/rgo1"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/enabled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="enabled" />
+
+                    <RadioButton
+                        android:id="@+id/clickable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="clickable"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/visibility"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="visibility"
+                        />
+                    <RadioButton
+                        android:id="@+id/padding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="padding"
+                        />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text=""
+
+                    android:id="@+id/result1"/>
+
+                <TextView
+                    android:text="2. 레이아웃 속성중 위젯의 위치 설정에 영향을 끼치지 않는것은?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:padding="5dp"
+                    android:id="@+id/qu2"
+                    android:textColor="#020101"
+                    android:textSize="15dp"
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/rgo2"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/orientation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="orientation" />
+
+                    <RadioButton
+                        android:id="@+id/gravity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="gravity"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/baselineAligned"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="baselineAligned"
+                        />
+                    <RadioButton
+                        android:id="@+id/layout_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="layout_height"
+                        />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text=""
+
+                    android:id="@+id/result2"/>
+
+                <TextView
+                    android:text="3. 레이아웃중에서 상대적인 위치로 위젯을 배치하기에 적합한 레이아웃은?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#020101"
+                    android:visibility="gone"
+                    android:id="@+id/qu3"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    />
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/rgo3"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/LinearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="LinearLayout" />
+
+                    <RadioButton
+                        android:id="@+id/RelativeLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="RelativeLayout"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/TableLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="TableLayout"
+                        />
+                    <RadioButton
+                        android:id="@+id/GridLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="GridLayout"
+                        />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text=""
+                    android:padding="5dp"
+                    android:id="@+id/result3"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qu41"
+                    android:visibility="gone"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/horizental"/>
+                <TextView
+                    android:text="4. 위 이미지는 리니어 레이아웃이다. orientation 속성으로 알맞는 것은?"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#020101"
+                    android:visibility="gone"
+                    android:id="@+id/qu42"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    />
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/rgo4"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="vertical" />
+
+                    <RadioButton
+                        android:id="@+id/horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="horizontal"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="weight"
+                        />
+                    <RadioButton
+                        android:id="@+id/center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="center"
+                        />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text=""
+                    android:padding="5dp"
+                    android:id="@+id/result4"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.06"
+        android:background="#86DD79">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/aaaa"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/first"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/aaaa"
+                android:background="#86DD79"
+                android:scaleType="fitXY"
+                android:src="@drawable/as" />
+
+            <ImageButton
+                android:id="@+id/homekey"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/blank1"
+                android:background="#86DD79"
+                android:scaleType="fitXY"
+                android:src="@drawable/home" />
+            <Button
+                android:id="@+id/blank1"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

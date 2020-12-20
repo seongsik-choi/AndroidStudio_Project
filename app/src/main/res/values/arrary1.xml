@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="이론">
+        <item>원하는 이론을 선택하세요 ▼</item>
+        <item>- 1주차 이론</item>
+        <item>- 2주차 이론</item>
+        <item>- 3주차 이론</item>
+        <item>- 4주차 이론</item>
+    </string-array>
+</resources>

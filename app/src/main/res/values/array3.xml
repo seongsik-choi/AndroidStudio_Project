@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="이론백과">
+        <item>원하는 이론에 대해 선택하세요 ▼</item>
+        <item>- Button</item>
+        <item>- Text</item>
+        <item>- 속성 값 1</item>
+        <item>- 속성 값 2</item>
+        <item>- CheckBox</item>
+        <item>- Switch, Toggle</item>
+        <item>- Radio</item>
+        <item>- Image 사용법</item>
+        <item>- Image</item>
+        <item>- Orientation</item>
+        <item>- gravity</item>
+        <item>- layout_gravity</item>
+        <item>- 가중치</item>
+        <item>- TableLayout</item>
+        <item>- Clock</item>
+        <item>- DataPicker</item>
+        <item>- 자동완성텍스트 뷰</item>
+        <item>- 멀티자동완성텍스트 뷰</item>
+        <item>- Bar</item>
+        <item>- ScrollView </item>
+    </string-array>
+</resources>

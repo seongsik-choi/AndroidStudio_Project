@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ice.studyproject1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/as"
+        android:label="3A+"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".follow"></activity>
+        <activity android:name=".follow1"></activity>
+        <activity android:name=".setting1"></activity>
+        <activity android:name=".follow2"></activity>
+        <activity android:name=".dic"></activity>
+        <activity android:name=".econ"></activity>
+        # 설정창 클릭시 나오는 팝업창
+        <activity android:name=".pop1"
+            android:theme="@style/poptheme" android:screenOrientation="portrait"> </activity>
+       # 설정 팝업에서 도움말 버튼 클릭시
+        <activity android:name=".pop"
+            android:theme="@style/poptheme" android:screenOrientation="portrait"> </activity>
+        # 설정 팝업에서 개발자 버튼 클릭시
+        <activity android:name=".pop2"
+            android:theme="@style/poptheme" android:screenOrientation="portrait"> </activity>
+        # 예제 1번
+        <activity android:name=".exercise1"></activity>
+        <activity android:name=".exercise2"></activity>
+        <activity android:name=".exercise3"></activity>
+
+    </application>
+
+</manifest>

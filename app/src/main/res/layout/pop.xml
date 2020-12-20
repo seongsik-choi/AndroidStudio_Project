@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:src="@drawable/hp"
+        android:scaleType="fitXY"/>
+        <Button
+            android:id="@+id/okBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:background="#B935D2FF"
+            android:onClick="mCancle"/>
+</LinearLayout>

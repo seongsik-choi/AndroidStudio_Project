@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="430dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sp"
+                    android:scaleType="fitXY"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/aa" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="☆위 이미지의 더하기 버튼까지 UI를 구성하시오.☆ \n "
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(덧셈부분의 버튼 속성 : 여백=10dp ,id=btnAdd ,글자크기=20dp)" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="layout_width=&quot;match_parent&quot;" />
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="layout_width=&quot;warp_content&quot;" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_margin="5dp"
+                    android:background="#6062fc"
+                    android:clickable="false" />
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="android:text=&quot;더하기&quot;" />
+
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="android:char=&quot;더하기&quot;" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_margin="5dp"
+                    android:background="#6062fc"
+                    android:clickable="false" />
+
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="android:padding=&quot;10dp&quot;" />
+
+                <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="android:layout_margin=&quot;10dp&quot;" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_margin="5dp"
+                    android:background="#6062fc"
+                    android:clickable="false" />
+
+                <CheckBox
+                    android:id="@+id/checkBox7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="android:layout_height=&quot;match_parent&quot;" />
+
+                <CheckBox
+                    android:id="@+id/checkBox8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="android:layout_height=&quot;wrap_content&quot;" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_margin="5dp"
+                    android:background="#6062fc"
+                    android:clickable="false" />
+
+                <CheckBox
+                    android:id="@+id/checkBox9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="android:id=&quot;@+id/btnAdd&quot;" />
+
+                <CheckBox
+                    android:id="@+id/checkBox10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="android:id=&quot;/btnAdd&quot;" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_margin="5dp"
+                    android:background="#6062fc"
+                    android:clickable="false" />
+
+                <CheckBox
+                    android:id="@+id/checkBox11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="android:text=&quot;20dp&quot;" />
+
+                <CheckBox
+                    android:id="@+id/checkBox12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="android:textSize=&quot;20dp&quot;" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_margin="5dp"
+                    android:background="#6062fc"
+                    android:clickable="false" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#6062fc"
+                    android:text="선택완료" />
+
+
+                <TextView
+                    android:id="@+id/textview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="결과"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:id="@+id/check"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:background="#6062fc"
+                    android:text="정답확인" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.07"
+        android:background="#86DD79">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/aaaa"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/first"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/aaaa"
+                android:background="#86DD79"
+                android:scaleType="fitXY"
+                android:src="@drawable/as" />
+
+            <ImageButton
+                android:id="@+id/homekey"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/blank1"
+                android:background="#86DD79"
+                android:scaleType="fitXY"
+                android:src="@drawable/home" />
+            <Button
+                android:id="@+id/blank1"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

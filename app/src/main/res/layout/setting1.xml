@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+// 홈에서 셋팅 버튼 눌렀을때
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Help"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:visibility="invisible"/>
+        <Button
+            android:id="@+id/gps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="개발자 위치"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.7"
+        android:background="#86DD79">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/aaaa"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/first"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/aaaa"
+                android:background="#86DD79"
+                android:scaleType="fitXY"
+                android:src="@drawable/as" />
+
+            <ImageButton
+                android:id="@+id/homekey"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/blank1"
+                android:background="#86DD79"
+                android:scaleType="fitXY"
+                android:src="@drawable/home" />
+            <Button
+                android:id="@+id/blank1"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

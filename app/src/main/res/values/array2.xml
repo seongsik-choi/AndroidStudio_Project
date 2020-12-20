@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="백과사전">
+        <item>백과서전 페이지(이론, 예제) ▼</item>
+        <item>- 이론 검색</item>
+        <item>- 예제 풀이</item>
+        <item>- 문제 풀이</item>
+        <item>- 심화 풀이</item>
+    </string-array>
+</resources>

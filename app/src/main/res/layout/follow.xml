@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroud">
+    // 이론 페이지
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#86DD79">
+        <Button
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"/>
+       <ImageView
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:scaleType="fitXY"
+           android:src="@drawable/search"/>
+        <Spinner
+            android:id="@+id/spinner1"
+            android:entries="@array/이론"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:scrollbarSize="30dp"
+            android:layout_margin="4dp"
+            android:background="#86DD79"></Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center_horizontal">
+            // 1주차 이론 사진들
+            <ViewFlipper
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/i1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ex1"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/i2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ex2"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/i3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ex3"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/i4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ex4"
+                    android:visibility="gone"/>
+            </ViewFlipper>
+            //2주차 이론 사진들
+            <ViewFlipper
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/i12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    android:src="@drawable/i12"/>
+                <ImageView
+                    android:id="@+id/i13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/i13"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/i14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/i14"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/i15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/i15"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/i16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/i16"
+                    android:visibility="gone"/>
+            </ViewFlipper>
+            // 3주차 이론 사진들
+            <ViewFlipper
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/i17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    android:src="@drawable/i17"/>
+                <ImageView
+                    android:id="@+id/i18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/i18"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/i19"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/i19"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/i20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/i20"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/i21"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/i21"
+                    android:visibility="gone"/>
+            </ViewFlipper>
+            // 4주차 이론 사진들
+            <ViewFlipper
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/i22"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"
+                    android:src="@drawable/i22"/>
+                <ImageView
+                    android:id="@+id/i23"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/i23"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/i24"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/i24"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/i25"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/i25"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/i26"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/i26"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/i27"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/i27"
+                    android:visibility="gone"/>
+            </ViewFlipper>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.7"
+        android:background="#86DD79">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/aaaa"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/first"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/aaaa"
+                android:background="#86DD79"
+                android:scaleType="fitXY"
+                android:src="@drawable/as" />
+
+            <ImageButton
+                android:id="@+id/homekey"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/blank3"
+                android:background="#86DD79"
+                android:scaleType="fitXY"
+                android:src="@drawable/home" />
+
+            <Button
+                android:id="@+id/blank3"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/previous"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/previous"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/blank2"
+                android:background="#86DD79"
+                android:scaleType="fitXY"
+                android:src="@drawable/previous" />
+
+            <Button
+                android:id="@+id/blank2"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/next"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/blank1"
+                android:background="#86DD79"
+                android:scaleType="fitXY"
+                android:src="@drawable/next" />
+
+            <Button
+                android:id="@+id/blank1"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

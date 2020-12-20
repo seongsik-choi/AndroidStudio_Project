@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="430dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/exercise1"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=" ☆ 동영상에 관한 코딩에\n 빈칸을 알맞게 채우시오\n"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/btnex1"
+                    android:src="@drawable/btnex1"/>
+                <TextView
+                    style="@style/CustomTextView"
+                    android:text="#Button과 TextView 위젯만을 사용#"/>
+
+                <TextView
+                    style="@style/CustomTextView1"
+                    android:textSize="22dp"
+                    android:text=" &lt; XML code &gt;\n&lt; Button\nandroid:layout_width=&quot;match_parent&quot;\nandroid:layout_height=&quot;wrap_content&quot;\nandroid:text=&quot;Button 1&quot;\nandroid:background=&quot;#ffea00&quot;\nandroid:id=&quot;@+id/btn1&quot;\nandroid:textSize=&quot;70dp&quot; /&gt;   "/>
+
+
+                <TextView
+                    style="@style/CustomTextView1"
+                    android:textSize="22dp"
+                    android:text=" &lt; TextView\nandroid:layout_margin=&quot;20dp&quot;\n  android:textSize=&quot;20dp&quot;\nandroid:layout_width=&quot;wrap_content&quot;\nandroid:layout_height=&quot;wrap_content&quot;\nandroid:text=&quot;버튼이 선택되었습니다.&quot;\nandroid:id=&quot;@+id/tv1&quot;\nandroid:visibility=&quot;&lt;1._____&gt;&quot; /&gt;"/>
+
+                <TextView
+                    style="@style/CustomTextView1"
+                    android:textSize="18dp"
+                    android:text="&lt; JAVA Code &gt;\nfinal Button btn1 = (Button)findViewById(R.id.btn1);\n
+        final TextView tv1 = (TextView)findViewById(R.id.tv1);\n\n
+
+        btn1.setOnClickListener(new View.OnClickListener() {\n
+        @Override\n
+        public void onClick(View view) {\n
+        tv1.3.___________(View.&lt;3.________&gt;);\n
+        }\n
+        });"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#020101"
+                    android:textSize="15dp"
+                    android:enabled="true"
+                    android:id="@+id/textview1"
+                    android:text="1. XML의 기본 텍스트뷰의 속성은 어떻게 될까요?"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:clickable="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/rgo1"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="visible" />
+
+                    <RadioButton
+                        android:id="@+id/gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="gone"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="invisible"
+                        />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="결과창"
+                    android:id="@+id/textView2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/anw2"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textSize="15dp"
+                    android:textColor="#020101"
+                    android:text="2. 1번 문제의 위젯의 구성은 무엇일까요?"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"
+                    android:id="@+id/rgo2"
+                    >
+                    <RadioButton
+                        android:id="@+id/radiobutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="radiobutton" />
+
+                    <RadioButton
+                        android:id="@+id/CompundButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="CompundButton" />
+
+                    <RadioButton
+                        android:id="@+id/CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="CheckBox" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/textView3"/>
+                <!--mmmmmm3번 문제에에에에에mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/anw3"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textColor="#020101"
+                    android:textSize="15dp"
+                    android:text="3. JAVA 코드내에서 위젯의 보여짐을 다루는 속성과, 그 속성의 값을 설정하세요."/>
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone"
+                    android:id="@+id/rgo3"
+                    >
+                    <RadioButton
+                        android:id="@+id/visible1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="setVisibility , gone" />
+                    <RadioButton
+                        android:id="@+id/gone1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="setVisibility , visible" />
+                    <RadioButton
+                        android:id="@+id/invisible1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="setClickable, invisible" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/textView4"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="0.06"
+        android:background="#86DD79">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/aaaa"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/first"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/aaaa"
+                android:background="#86DD79"
+                android:scaleType="fitXY"
+                android:src="@drawable/as" />
+
+            <ImageButton
+                android:id="@+id/homekey"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/blank1"
+                android:background="#86DD79"
+                android:scaleType="fitXY"
+                android:src="@drawable/home" />
+            <Button
+                android:id="@+id/blank1"
+                android:layout_width="10dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
