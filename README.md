@@ -13,6 +13,7 @@ JAVA 기반의 Android Studio 사용법을 교육하며, 응용 문제를 풀 �
 **3) Function sequence**
 
 Study Contents
+
 ![image](https://user-images.githubusercontent.com/76051264/102712962-29803700-4308-11eb-8932-a0276e6fca11.png)
 ![image](https://user-images.githubusercontent.com/76051264/102712979-3735bc80-4308-11eb-89c2-6665264d565f.png)
 
