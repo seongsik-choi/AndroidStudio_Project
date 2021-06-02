@@ -2,9 +2,10 @@
 ## JAVA 기반의 Android Studio 사용법을 교육하며, 응용 문제를 풀 수 있는 학습 기능을 제공하는 Application
 
 **1) Project Subject**
-  -  
+
+
 **2) Main Function**
-  - 
+
   
  **3) Technology**
   - O/S : 
