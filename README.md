@@ -35,7 +35,6 @@
 
   - Dictionary Contents 
   
-![image](https://user-images.githubusercontent.com/76051264/102713006-5d5b5c80-4308-11eb-993e-1142657e522e.png)
 ![image](https://user-images.githubusercontent.com/76051264/102713011-62b8a700-4308-11eb-8724-e7905768025c.png)
 
   - About
